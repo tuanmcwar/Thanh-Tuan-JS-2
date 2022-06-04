@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./index.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-2 left ">
+                <button type="button" class="btn btn-active  btn1 btn-primary1 " id="bai1">Bài 1</button>
+
+                <button type="button" class="btn btn-active  btn1 btn-primary1 " id="bai2">Bài 2</button>
+                <button type="button" class="btn btn-active  btn1 btn-primary1" id="bai3">Bài 3</button>
+                <button type="button" class="btn  btn-active btn1 btn-primary1" id="bai4">Bài 4</button>
+                <button type="button" class="btn btn-active  btn1 btn-primary1" id="bai5">Bài 5</button>
+            </div>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+            <div class="col-10 right">
+                <div class="content_b1 content tran" id="content1">
+                    <h2>💰 Tính tiền lương nhân viên</h2>
+                    <div class="content__text">
+                        <h3>💡Gợi ý:</h3>
+                        <p>
+                            Công thức: Lương = Lương 1 ngày * số ngày làm Kiến thức áp dụng:
+                        </p>
+                        <ul>
+                            <li>Tìm tới thẻ và lấy giá trị</li>
+                            <li>Tạo hàm cơ bản</li>
+                            <li>Gắn sự kiện click cho button</li>
+                            <li>Thay đổi nội dung cho thẻ</li>
+                            <li>Xử lý load trang với button của form</li>
+                        </ul>
+                    </div>
+                    <form class="row align-items-center content__text--input">
+                        <div class="col-12 col-lg-4">
+                            <input type="number" class="form-control form__input" id="inputNum1B1" placeholder="Nhập lương một ngày" />
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <input type="number" class="form-control form__input" id="inputNum2B2" placeholder="Số ngày làm" />
+                        </div>
+
+                        <div class="col-12">
+                            <button class="btn btn--primary" type="button" id="btnB1">
+                             Tính lương
+                                 </button>
+                        </div>
+                        <div class="content__text--output" role="alert">
+                            👉<span id="txtB1"></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="content_b2 content tran" id="content2">
+                    <h2>📚 Tính giá trị trung bình</h2>
+                    <div class="content__text">
+                        <h3>💡Gợi ý:</h3>
+                        <p>
+                            Kiến thức áp dụng:
+                        </p>
+                        <ul>
+                            <li>Tìm tới thẻ và lấy giá trị</li>
+                            <li>Tạo hàm cơ bản</li>
+                            <li>Gắn sự kiện click cho button</li>
+                            <li>Thay đổi nội dung cho thẻ</li>
+                            <li>Xử lý load trang với button của form</li>
+                            <li>Xử lý ép kiểu dữ liệu</li>
+
+                        </ul>
+                    </div>
+                    <form class="row align-items-center  content__text--input">
+                        <div class="col-12 col-lg-4">
+                            <input type="number" class="form-control form__input" id="num1B2" placeholder="Nhập số thứ 1">
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <input type="number" class="form-control form__input" id="num2B2" placeholder="Nhập số thứ 2">
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <input type="number" class="form-control form__input" id="num3B2" placeholder="Nhập số thứ 3">
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <input type="number" class="form-control form__input" id="num4B2" placeholder="Nhập số thứ 4">
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <input type="number" class="form-control form__input" id="num5B2" placeholder="Nhập số thứ 5">
+                        </div>
+
+                        <div class="col-12">
+                            <button class="btn btn--primary " type="button" id="btnB2">Tính trung
+                                        bình</button>
+                        </div>
+                        <div class="content__text--output" role="alert">
+                            👉 <span id="txtB2"></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="content_b3 content tran" id="content3">
+                    <h2>💱 Quy đổi tiền</h2>
+                    <div class="content__text">
+                        <h3>💡Gợi ý:</h3>
+                        <p>
+                            Kiến thức áp dụng:
+                        </p>
+                        <ul>
+                            <li>Áp dụng các kiến thức như bài 1 và 2</li>
+                            <li>Giá USD mặc định 1 USD = 23500</li>
+                            <li>Có thể dùng thêm NumberFormat để số tiền hiển thị đẹp hơn:
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat">NumberFormat</a></li>
+                            VD: new Intl.NumberFormat('vn-VN').format(23500); => 23,500
+
+
+                        </ul>
+                    </div>
+                    <form class="row align-items-center content__text--input ">
+                        <div class="col-12 col-lg-4 ">
+                            <input type="number" class="form-control form__input " id="num1B3" placeholder="Nhập số tiền USD ">
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn--primary " type="button" id="btnB3">Quy đổi tiền</button>
+                        </div>
+                        <div class="content__text--output " role="alert">
+                            👉 <span id="txtB3"></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="content_b4 content tran" id="content4">
+                    <h2>📏 Tính diện tích, chu vi hình chữ nhật</h2>
+                    <div class="content__text ">
+                        <h3>💡Gợi ý:</h3>
+                        <p>
+                            Kiến thức áp dụng:
+                        </p>
+                        <ul>
+                            <li>Áp dụng các kiến thức như các bài trước</li>
+                            <li>Diện tích: dài x rộng</li>
+                            <li>Chu vi: (dài + rộng) x 2</li>
+
+
+
+                        </ul>
+                    </div>
+                    <form class="row align-items-center content__text--input ">
+                        <div class="col-12 col-lg-4 ">
+                            <input type="number" class="form-control form__input " id="num1B4" placeholder="Nhập chiều dài ">
+                        </div>
+                        <div class="col-12 col-lg-4 ">
+                            <input type="number" class="form-control form__input " id="num2B4" placeholder="Nhập chiều rộng ">
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn--primary " type="button" id="btnB4">Tính</button>
+                        </div>
+                        <div class="content__text--output" role="alert ">
+                            👉 <span id="txtB4"></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="content_b5 content tran" id="content5">
+                    <h2>🧮 Tính tổng 2 ký số</h2>
+                    <div class="content__text">
+                        <h3>💡Gợi ý:</h3>
+                        <p>
+                            Kiến thức áp dụng:
+                        </p>
+                        <ul>
+                            <li>Áp dụng cách tính như demo tổng 3 ký số trên lớp</li>
+
+
+
+                        </ul>
+                    </div>
+                    <form class="row align-items-center content__text--input ">
+                        <div class="col-12 col-lg-4 ">
+                            <input type="number " class="form-control form__input " id="num1B5" placeholder="Nhập số có 2 chử số">
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn--primary " type="button" id="btnB5">Tính</button>
+                        </div>
+                        <div class="content__text--output " role="alert ">
+                            👉 <span id="txtB5"></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+    <script src="./index.js "></script>
+</body>
+
+</html>
